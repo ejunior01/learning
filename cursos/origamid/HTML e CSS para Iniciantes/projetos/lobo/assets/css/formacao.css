@@ -1,0 +1,144 @@
+#formacao {
+  background-color: #141414;
+  color: #fff;
+}
+
+.formacao-content {
+  padding: 7.5rem 1.25rem;
+  position: relative;
+}
+
+.formacao-content::after {
+  position: absolute;
+  content: "";
+  display: block;
+
+  background: url("../img/detalhe.svg") no-repeat center;
+
+  width: 130px;
+  height: 100px;
+  bottom: -50px;
+  left: 20px;
+}
+
+#formacao .subtitle {
+  color: #000;
+  max-width: 5ch;
+}
+
+#formacao .resumo {
+  color: #a3a3a3;
+}
+
+#formacao .resumo strong {
+  color: #fff;
+}
+
+.faculdades-lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  margin-bottom: 3.75rem;
+}
+
+.faculdades-lista .faculdade-item {
+  background-color: #000;
+  padding: 1.25rem;
+  border-radius: 4px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  color: #a3a3a3;
+}
+
+.faculdades-lista .faculdade-item .faculdade-tipo {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.faculdades-lista .faculdade-item .faculdade-curso {
+  flex: 1;
+  font-size: 1.125rem;
+  line-height: 1.4;
+  margin-bottom: 40px;
+  position: relative;
+  color: #fff;
+}
+
+.faculdades-lista .faculdade-item .faculdade-curso::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 20px;
+  background: linear-gradient(#b6f829, #67dd0a);
+  position: absolute;
+  left: -24px;
+}
+
+.faculdades-lista .faculdade-item .faculdade-instituicao {
+  font-size: 1.125rem;
+}
+
+.cursos {
+  margin-bottom: 60px;
+}
+
+.cursos h3,
+.idiomas h3 {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  color: #8f8f8f;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.cursos ul li,
+.idiomas ul li {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.125rem;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.idiomas ul li {
+  justify-content: initial;
+}
+.cursos li span,
+.idiomas li span {
+  color: #8f8f8f;
+}
+
+.idiomas li span {
+  margin-left: 5px;
+}
+
+.icon-curso::before {
+  content: "";
+  display: block;
+  content: "";
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: -36px;
+  top: -4px;
+}
+
+.cursos .icon-curso::before {
+  background: url("../img/cursos.svg") no-repeat center;
+}
+
+.idiomas .icon-curso::before {
+  background: url("../img/idiomas.svg") no-repeat center;
+}
+
+@media (max-width: 800px) {
+  .icon-curso::before {
+    position: initial;
+    top: initial;
+    margin-bottom: 20px;
+  }
+}

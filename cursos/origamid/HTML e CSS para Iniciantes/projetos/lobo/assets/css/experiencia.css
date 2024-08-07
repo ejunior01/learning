@@ -1,0 +1,95 @@
+
+.experiencia-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 20px;
+  padding: 20px;
+  background: #f5f5f5;
+  border-radius: 4px;
+
+  position: relative;
+}
+
+.experiencia-item::before {
+  content: "";
+  position: absolute;
+  display: block;
+
+  top: 20px;
+  left: -4px;
+
+  width: 4px;
+  height: 20px;
+
+  background: linear-gradient(#b6f829, #67dd0a);
+}
+
+.experiencia-item h3,
+.experiencia-cargo {
+  font-size: 1.125rem;
+  color: #141414;
+  font-weight: bold;
+  line-height: 1.1;
+}
+
+.experiencia-item p {
+  font-size: 0.875rem;
+  color: #525252;
+  line-height: 1.4;
+}
+
+.experiencia-resumo > ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.experiencia-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-content: start;
+}
+
+.experiencia-ano {
+  position: absolute;
+  top: 22px;
+  left: -100px;
+  text-align: right;
+  width: 80px;
+  color: #525252;
+  font-size: 0.875rem;
+}
+
+.experiencia-skills li {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  border-radius: 4px;
+  background: #fff;
+  padding: 5px 10px;
+}
+
+@media (max-width: 800px) {
+  .experiencia-item {
+    grid-template-columns: 1fr;
+  }
+
+  .experiencia-ano {
+    position: relative;
+    top: auto;
+    left: auto;
+    text-align: center;
+    order: 1;
+    background: linear-gradient(#b6f829, #67dd0a);
+    padding: 5px 10px;
+    border-radius: 4px;
+    color: #141414;
+    font-weight: bold;
+  }
+}
+
+@media (max-width: 500px) {
+  .experiencia-resumo > p {
+    font-size: 1.125rem;
+  }
+}

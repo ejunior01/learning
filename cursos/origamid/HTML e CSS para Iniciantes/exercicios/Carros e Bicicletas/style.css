@@ -1,0 +1,39 @@
+button,
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: auto;
+  width: 70%;
+}
+
+.product {
+  background-color: #111;
+  border-radius: 4px;
+  color: #b2b2b2;
+  padding: 24px;
+  margin-bottom: 16px;
+}
+
+h1 {
+  text-align: center;
+}
+h2 {
+  color: white;
+}
+
+span {
+  color: #febe01;
+}
+
+button {
+  margin-top: 8px;
+  background-color: #febe01;
+  color: #332200;
+  padding: 12px;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+}

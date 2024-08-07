@@ -1,0 +1,170 @@
+/* Estilos gerais */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f7f7f7;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  font-size: 20px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+/* Estilos header */
+
+header {
+  text-align: center;
+  margin: 48px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+header nav {
+  display: flex;
+  gap: 16px;
+}
+
+.nav-item {
+  color: #000;
+  background-color: #fff;
+
+  text-transform: uppercase;
+  font-weight: 600;
+
+  padding: 14px 24px;
+
+  border-radius: 4px;
+}
+
+/* Estilos main */
+
+main {
+  max-width: 1000px;
+}
+
+main section {
+  background-color: #fff;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.product-description {
+  position: relative;
+}
+
+.product-description div {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+  gap: 24px;
+
+  padding: 24px;
+}
+
+.product-description div h1 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.product-description div p {
+  max-width: 90%;
+  text-align: right;
+}
+
+.product-description span {
+  background-color: #ee2211;
+
+  position: absolute;
+  top: 32px;
+  right: 46%;
+
+  width: 72px;
+  height: 4px;
+}
+
+.cta {
+  background-color: #ee2211;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.product-details div {
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 24px;
+}
+
+.product-details div h2 {
+  color: #c6c6c6;
+  font-size: 64px;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.product-details ul {
+  padding: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.product-details ul li {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 16px;
+  row-gap: 8px;
+}
+
+.product-details ul li h3 {
+  font-weight: bold;
+}
+
+.product-details ul li p {
+  grid-column: 2 / -1;
+}
+
+/* Estilos footer */
+
+footer {
+  background-color: #fff;
+
+  width: 100%;
+  padding: 32px;
+}
+
+footer p {
+  text-align: center;
+}
