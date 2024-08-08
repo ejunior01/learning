@@ -7,6 +7,8 @@
 @import "./global/header.css";
 
 @import "./home/introducao.css";
+@import "./home/tecnologia.css";
+
 @import "./bicicletas/bicicletas-listas.css";
 
 .bg-primary {
