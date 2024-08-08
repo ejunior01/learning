@@ -20,9 +20,10 @@ public class Money : IExpression
         return new Money(_amount * multiplier, _currency);
     }
 
-    public Money Reduce(string to)
+    public Money Reduce(Bank bank,string to)
     {
-        return this;
+        int rate = bank.Rate(_currency, to);
+        return new Money(_amount / rate, to);
     }
 
     public IExpression Plus(Money addend)

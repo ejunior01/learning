@@ -56,4 +56,18 @@ public class UnitTest
         Money result = bank.Reduce(Money.Dollar(1), "USD");
         Assert.AreEqual(result, Money.Dollar(1));
     }
+
+    [TestMethod]
+    public void TestRecuceMoneyDifferentCurrency() {
+        Bank bank = new Bank();
+        bank.AddRate("CHF", "USD", 2);
+        Money result = bank.Reduce(Money.Franc(4), "USD");
+        Assert.AreEqual(result, Money.Dollar(2));
+
+    }
+
+    [TestMethod]
+    public void TestIdentityRate() {
+        Assert.AreEqual(1, new Bank().Rate("USD", "USD"));
+    }
 }

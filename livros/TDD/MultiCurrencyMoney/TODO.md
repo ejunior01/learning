@@ -5,8 +5,8 @@
 [ ] $5 + $5 = $10
 [ ] Retornar Money de $5 + $5
 [x] Bank.reduce( Money )
-[ ] Reduzir Money com conversões
-[ ] Reduce(Bank, String)
+[x] Reduzir Money com conversões
+[x] Reduce(Bank, String)
 [x] Tornar “quantidade” privada
 [x] Efeitos colaterais em Dollar?
 [ ] Arredondamento de dinheiro?
