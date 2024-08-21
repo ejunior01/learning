@@ -17,6 +17,16 @@
   line-height: 1.33;
   transition: background 0.3s;
   font: 600 1.125rem/1.35 "Poppins", sans-seri;
+  max-width: max-content;
+}
+
+.btn.secundario {
+  background: var(--cor-10);
+  color: var(--cor-2);
+}
+
+.btn.secundario:hover {
+  background: var(--cor-9);
 }
 
 .link {
